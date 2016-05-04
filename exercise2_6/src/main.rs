@@ -18,7 +18,7 @@ fn main() {
     if years_to_retirement < 0 {
         println!("Time to retire");
     } else {
-        let current_year = 1900 + time::now().tm_year;
+        let current_year = 1900 + time::now().tm_year; //why does this return number of years from 1900
         println!("You have {} years left until you retire.  It's {}, so you can retire in {}.",
             years_to_retirement, current_year, current_year + years_to_retirement);
     }
